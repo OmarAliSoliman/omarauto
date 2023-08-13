@@ -639,6 +639,7 @@ p {
 
   &.slick-next {
     left: 250px;
+
     &::before {
       content: "\f105";
       margin-left: 5px;
@@ -648,6 +649,7 @@ p {
 
   &.slick-prev {
     left: 200px;
+
     &::before {
       content: "\f104";
       margin-right: 5px;
@@ -670,6 +672,7 @@ p {
     }
   }
 }
+
 /* ================================================================ */
 .section-header {
   h5 {
@@ -677,6 +680,7 @@ p {
     width: fit-content;
     margin: 0;
     color: $mainColor;
+
     &::after {
       content: "";
       position: absolute;
@@ -700,14 +704,17 @@ p {
   left: 0;
   z-index: 4;
   padding: 25px 0;
+
   .logo {
     img {
       width: 200px;
     }
   }
+
   .links {
     li {
       margin-right: 45px;
+
       a {
         padding: 5px 17px;
         font-size: 1.1rem;
@@ -715,11 +722,13 @@ p {
         border-radius: 16px;
         cursor: pointer;
       }
+
       &.active {
         a {
           background-color: $mainColor;
         }
       }
+
       &:hover {
         a {
           background-color: $mainColor;
@@ -732,17 +741,20 @@ p {
     li {
       margin-right: 14px;
     }
+
     .person-icon {
       .card-img {
         width: 42px;
         height: 42px;
         border-radius: 50%;
         border: 1px solid #fff;
+
         img {
           border-radius: 50%;
         }
       }
     }
+
     .btn-style {
       border-radius: 22px;
       font-size: 1rem;
@@ -753,6 +765,7 @@ p {
       background-color: #fff;
       border: 1px solid #fff;
       color: #000;
+
       &.new-account {
         background-color: transparent;
         color: #fff;
@@ -761,22 +774,26 @@ p {
   }
 }
 
-.custom-navbar-position{
+.custom-navbar-position {
   position: relative;
   background-color: #000000;
 }
+
 /* ================================================================ */
 .header {
   position: relative;
   overflow: hidden;
   direction: rtl;
+
   .container {
     position: relative;
     z-index: 8;
   }
+
   .header-slider {
     margin-bottom: 0;
   }
+
   .header-content {
     position: relative;
     height: 100%;
@@ -786,14 +803,17 @@ p {
     position: relative;
     z-index: 8;
     direction: rtl;
+
     .wrappe {
       position: relative;
       z-index: 8;
+
       h6 {
         color: $mainColor;
         position: relative;
         width: fit-content;
         margin: 0;
+
         &::after {
           content: "";
           position: absolute;
@@ -806,21 +826,25 @@ p {
           border-radius: 5px;
         }
       }
+
       h5,
       p {
         color: #fff;
       }
+
       h5 {
         font-size: 2.5rem;
         font-family: conb;
         margin: 15px 0;
       }
+
       .btn-style {
         background-color: #fff;
         padding: 15px 50px;
         color: #000;
         border-color: #fff;
         margin-top: 30px;
+
         &:hover {
           background-color: transparent;
           color: #fff;
@@ -828,8 +852,10 @@ p {
       }
     }
   }
+
   .card-img {
     overflow: hidden;
+
     .dokhan {
       position: absolute;
       bottom: -350px;
@@ -845,6 +871,7 @@ p {
     left: 200px;
     align-items: center;
     margin-bottom: 0;
+
     li {
       margin: 0;
       width: 25px;
@@ -852,6 +879,7 @@ p {
       margin-right: 10px;
       border-radius: 5px;
       transition: all 0.3s ease-in-out;
+
       button {
         margin: 0;
         padding: 0;
@@ -859,6 +887,7 @@ p {
         height: 4px;
         border-radius: 5px;
         transition: all 0.3s ease-in-out;
+
         &::before {
           width: 10px;
           background-color: $mainColor;
@@ -870,12 +899,15 @@ p {
           transition: all 0.3s ease-in-out;
         }
       }
+
       &.slick-active {
         height: 8px;
         width: 8px;
+
         button {
           height: 8px;
           width: 8px;
+
           &:before {
             border-radius: 50%;
           }
@@ -891,6 +923,7 @@ p {
   box-sizing: 0 3px 6px rgba(#000000, 0.16);
   background-color: #ececec;
 }
+
 .department-card {
   .card-icon {
     width: 80px;
@@ -902,29 +935,36 @@ p {
     position: relative;
     overflow: hidden;
   }
+
   img {
     width: 60px;
     position: absolute;
     bottom: 0;
     right: 0px;
   }
+
   span {
     margin-right: 10px;
     color: #000;
   }
 }
+
 .dep-color-1 {
   background-color: #f9d906;
 }
+
 .dep-color-2 {
   background-color: #49c6d6;
 }
+
 .dep-color-3 {
   background-color: #fbb150;
 }
+
 .dep-color-4 {
   background-color: #1bbc9b;
 }
+
 .dep-color-5 {
   background-color: #f05a24;
 }
@@ -938,27 +978,33 @@ p {
   .disliked {
     display: none;
   }
+
   .liked {
     display: block;
     color: red;
   }
 }
+
 /* ================================================================ */
 .newews-announcement {
   background-color: #f2f2f2;
+
   .announsment-wrapper {
     margin-top: 32px;
     margin-bottom: 70px;
+
     .head {
       h5 {
         margin-bottom: 20px;
       }
     }
   }
+
   .announcment-cards-wrap {
     margin-top: 150px;
   }
 }
+
 .announsment-wrapper-filter {
   .nice-select {
     height: 45px;
@@ -968,23 +1014,29 @@ p {
     background-color: #fff;
     border-radius: 3px;
     border: 0.5px solid #707070;
+
     .list {
       width: 100%;
+
       .option {
         text-align: right !important;
       }
     }
   }
+
   .form-group {
     margin-right: 19px;
+
     label {
       cursor: pointer;
+
       input {
         position: absolute;
         z-index: 0;
         visibility: hidden;
         opacity: 0;
       }
+
       .card-check {
         background-color: #fff;
         border: 0.5px solid #707070;
@@ -993,21 +1045,25 @@ p {
         display: flex;
         padding: 0 21px;
         align-items: center;
+
         img {
           margin-right: 16px;
           width: 20px;
         }
       }
     }
-    input[type="checkbox"]:checked ~ .card-check {
+
+    input[type="checkbox"]:checked~.card-check {
       background-color: #000;
       color: #fff;
+
       img {
         filter: brightness(0) invert(1);
       }
     }
   }
 }
+
 .announcement-cards {
   padding: 60px 0;
   padding-bottom: 0;
@@ -1020,11 +1076,13 @@ p {
   margin-bottom: 31px;
   position: relative;
   margin-bottom: 100px;
+
   .like {
     position: absolute;
     top: 20px;
     left: 22px;
     cursor: pointer;
+
     .wrap {
       width: 42px;
       height: 42px;
@@ -1050,6 +1108,7 @@ p {
     padding: 19px 57px 59px 20px;
     padding-bottom: 0;
     position: relative;
+
     h5 {
       font-size: 1.2rem;
       margin-bottom: 25px;
@@ -1059,9 +1118,11 @@ p {
       display: flex;
       align-items: center;
       flex-wrap: wrap;
+
       li {
         margin-bottom: 34px;
         width: 50%;
+
         span {
           font-size: 1rem;
           color: #8e8e8e;
@@ -1074,21 +1135,25 @@ p {
         }
       }
     }
+
     .price {
       display: flex;
       align-items: center;
+
       h5 {
         direction: ltr;
         margin: 0;
         margin-left: 10px;
       }
     }
+
     .btn-style {
       padding: 12px 35px;
       background-color: $secondColor;
       border: 1px solid $secondColor;
       color: #fff;
       border-radius: 9px;
+
       &:hover {
         background-color: #fff;
         color: $secondColor;
@@ -1099,12 +1164,15 @@ p {
 
 .filter {
   padding-top: 65px;
+
   .head {
     margin-bottom: 30px;
   }
+
   .filter-form {
     .accordion {
       background-color: transparent;
+
       .accordion-header,
       .accordion-item,
       .accordion-button {
@@ -1112,25 +1180,30 @@ p {
         color: #000;
         border: 0;
         font-size: 1.1rem;
+
         &:focus {
           outline: 0 !important;
           box-shadow: none;
           border: 0 !important;
         }
       }
+
       .accordion-body {
         background-color: transparent;
       }
     }
+
     .accordion-button:not(.collapsed)::after {
       background-image: var(--bs-accordion-btn-icon);
     }
+
     .accordion-button:not(.collapsed) {
       box-shadow: none;
     }
 
     .alldepartment {
       justify-content: space-between;
+
       input[type="checkbox"] {
         position: relative;
         width: 40px;
@@ -1169,13 +1242,16 @@ p {
     .form-group {
       border-bottom: 1px solid rgba(112, 112, 112, 0.422);
       padding-top: 15px;
+
       .form-input {
         margin-bottom: 22px;
         display: flex;
         align-items: center;
+
         input {
           cursor: pointer;
         }
+
         label {
           font-family: conl;
           margin-right: 10px;
@@ -1191,14 +1267,63 @@ p {
 .login-page {
   padding: 130px 0;
   background-color: #F2F2F2;
+
   .header {
     text-align: center;
+
     // padding: 60px 0;
     h5 {
       font-size: 1.9rem;
       font-weight: bold;
     }
   }
+
+
+  .form-inputs-header {
+    font-size: 1.3rem;
+    color: #000;
+    margin-right: 0;
+  }
+
+  .form-inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .form-group {
+      width: 78px;
+      height: 85px;
+      // display: flex;
+      // align-items: center;
+      // justify-content: center;
+      margin: 0 9px;
+
+      .form-control {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+        border: 0;
+        padding-top: 18px;
+        font-size: 2.5rem;
+
+        &:focus {
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16) !important;
+        }
+
+        &::placeholder {
+          color: #8e8e8e;
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
+
+
+
 }
 
 .login-form {
@@ -1206,55 +1331,67 @@ p {
   padding: 50px;
   border-top-right-radius: 16px;
   border-bottom-right-radius: 16px;
+
   // min-height: 622px;
   .box-form {
     // margin-top: 125px;
   }
-  .form-control{
+
+  .form-control {
     height: 61px;
     border-radius: 10px;
     background-color: #F9F9F9;
     border: .5px solid #000000;
   }
-  .form-group{
+
+  .form-group {
     margin-top: 50px;
-    label{
+
+    label {
       margin-bottom: 10px;
     }
   }
-  .btn-style{
+
+  .btn-style {
     background-color: $secondColor;
     color: #fff;
     border-radius: 10px;
     border-color: $secondColor;
     width: 100%;
     text-align: center;
-    &:hover{
+
+    &:hover {
       background-color: #fff;
       color: $secondColor;
     }
   }
-  .forget-password{
+
+  .forget-password {
     margin-top: 16px;
     margin-bottom: 80px;
-    a{
+
+    a {
       text-decoration: underline;
       color: $secondColor;
     }
   }
-  .dont-hava-account{
+
+  .dont-hava-account {
     text-align: center;
     margin-top: 25px;
-    a{
+
+    a {
       font-family: conb;
       color: $secondColor;
-      span{
+
+      span {
         color: #535353;
         font-family: conl;
       }
     }
   }
-  .btn-signup{
+
+  .btn-signup {
     margin-top: 60px;
   }
 }
@@ -1268,10 +1405,12 @@ p {
   border-bottom-left-radius: 16px;
   text-align: center;
   position: relative;
+
   .logo {
     position: relative;
     z-index: 2;
   }
+
   &::after {
     content: "";
     position: absolute;
@@ -1289,22 +1428,83 @@ p {
 /* ================================================================ */
 
 
-.department-page{
-  .announcement-cards{
-    .section-header{
+.department-page {
+  .announcement-cards {
+    .section-header {
       display: flex;
       align-items: center;
-      h6, h5{
+
+      h6,
+      h5 {
         font-size: 1.2rem;
         margin-left: 10px;
         margin-bottom: 0;
       }
-      h5{
+
+      h5 {
         margin-right: 10px;
       }
     }
   }
 }
+
+/* ================================================================ */
+
+
+
+.profile-owner-page{
+  .profile-picture{
+    width: fit-content;
+    margin: auto;
+    margin-top: -100px;
+    .card-img{
+      width: 158px;
+      height: 124px;
+      border-radius: 11px;
+      img{
+        border-radius: 11px;
+      }
+    }
+    h5{
+      color: $mainColor;
+      text-align: center;
+      font-size: 1.2rem;
+      font-family: conb;
+    }
+    p{
+      text-align: center;
+      i{
+        color: $mainColor;
+        margin-left: 5px;
+      }
+      span, a{
+        color: #000;
+        font-family: conl;
+        
+      }
+    }
+  }
+}
+
+
+/* ================================================================ */
+.all-department{
+  padding: 102px 0;
+  .section-header{
+    margin-bottom: 50px;
+  }
+  .department-card{
+    margin-bottom: 50px;
+  }
+}
+
+
+/* ================================================================ */
+
+
+
+/* ================================================================ */
+
 
 /* ================================================================ */
 /* footer */
@@ -1313,6 +1513,7 @@ p {
   position: relative;
   overflow: hidden;
   background-image: url("../images/footerimg.png");
+
   &::after {
     content: "";
     @extend %overlay;
@@ -1322,6 +1523,7 @@ p {
   .footer_logo_content {
     width: 80%;
     font-family: conl;
+
     img {
       margin-bottom: 15px;
     }
@@ -1330,6 +1532,7 @@ p {
   p {
     color: #fff;
   }
+
   .footer_logo,
   .footer_follow,
   .footer_links,
@@ -1381,6 +1584,7 @@ p {
   }
 
   .footer_follow {
+
     // margin-top: 65px;
     h5 {
       text-align: center;
@@ -1402,10 +1606,13 @@ p {
     }
   }
 }
+
 /* ================================================================ */
-input[type="number"], input[type="email"]{
+input[type="number"],
+input[type="email"] {
   text-align: right;
 }
+
 /* ================================================================ */
 
 /* ================================================================ */
