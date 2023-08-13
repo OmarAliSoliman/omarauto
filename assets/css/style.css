@@ -1043,7 +1043,7 @@ p {
 /* ================================================================ */
 .login-page {
   padding: 130px 0;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 .login-page .header {
   text-align: center;
@@ -1100,7 +1100,7 @@ p {
 .login-form .form-control {
   height: 61px;
   border-radius: 10px;
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
   border: 0.5px solid #000000;
 }
 .login-form .form-group {
@@ -1213,7 +1213,8 @@ p {
   color: #fe0000;
   margin-left: 5px;
 }
-.profile-owner-page .profile-picture p span, .profile-owner-page .profile-picture p a {
+.profile-owner-page .profile-picture p span,
+.profile-owner-page .profile-picture p a {
   color: #000;
   font-family: conl;
 }
@@ -1231,7 +1232,7 @@ p {
 
 /* ================================================================ */
 .notification-page {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   padding: 65px 0;
 }
 .notification-page .head {
@@ -1283,8 +1284,9 @@ p {
 
 /* ================================================================ */
 .profile-inner-chats {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   padding: 65px 0;
+  padding-bottom: 200px;
 }
 .profile-inner-chats .head {
   margin-bottom: 90px;
@@ -1300,7 +1302,7 @@ p {
   border-radius: 13px;
   padding: 20px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: #fff;
   margin-top: 44px;
 }
 .innerchat-card .card-img {
@@ -1334,15 +1336,439 @@ p {
   margin: 0;
 }
 .innerchat-card.active {
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(152, 152, 152, 0.17);
 }
 
 /* ================================================================ */
 /* ================================================================ */
+.profile-chats {
+  padding: 90px 0;
+}
+.profile-chats .wrapper {
+  border: 0;
+  background-color: transparent;
+  padding-top: 0;
+}
+.profile-chats .head {
+  margin-bottom: 30px;
+}
+.profile-chats .head h5 {
+  font-size: 3rem;
+  font-family: conb;
+}
+.profile-chats .chat-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+.profile-chats .chat-header .card-img {
+  width: 112px;
+  height: 92px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
+  border-radius: 13px;
+}
+.profile-chats .chat-header .card-img img {
+  border-radius: 13px;
+}
+.profile-chats .chat-body {
+  height: calc(100vh - 203px);
+  overflow: auto;
+  padding: 0 20px;
+}
+.profile-chats .chat-message-form .input-group {
+  height: 84px;
+}
+.profile-chats .chat-message-form .input-group input {
+  border: 1px solid #fe0000;
+}
+.profile-chats .chat-message-form .input-group-text {
+  background-color: #fe0000;
+  border: 1px solid #fe0000;
+  width: 106px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat-message {
+  margin-bottom: 100px;
+}
+.chat-message .message {
+  padding: 29px 23px 60px 23px;
+  margin-bottom: 16px;
+  width: 60%;
+  border-radius: 13px;
+}
+.chat-message .message p {
+  font-size: 1rem;
+}
+.chat-message .time {
+  color: rgba(0, 0, 0, 0.36);
+}
+.chat-message .time i {
+  margin-left: 10px;
+  color: #fe0000;
+}
+.chat-message.message-sent .message {
+  background-color: rgba(83, 83, 83, 0.238);
+  border-bottom-left-radius: 0;
+}
+.chat-message.message-sent .message p {
+  color: #fff;
+}
+.chat-message.message-receive .message {
+  margin-right: auto;
+  background-image: linear-gradient(to left, #0d0d0d, #0d0d0d, #0d0d0d, rgba(113, 113, 113, 0.9));
+  border-bottom-left-radius: 0;
+}
+.chat-message.message-receive p {
+  color: #fff;
+}
+.chat-message.message-receive .time {
+  text-align: left;
+}
+
 /* ================================================================ */
+.faq-page {
+  padding-top: 41px;
+  background-color: #f2f2f2;
+  padding: 65px 0;
+  padding-bottom: 200px;
+}
+.faq-page .faq-head {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.faq-page .faq-head h5 {
+  margin-bottom: 50px;
+  font-size: 3rem;
+  color: #000;
+}
+.faq-page .wrapper {
+  border: 0;
+  border-radius: 24px;
+  padding: 52px 57px;
+  background-color: #fff;
+  padding: 55px 60px;
+}
+.faq-page .wrapper .accordion-item {
+  background-color: transparent;
+  border-bottom-color: rgba(112, 112, 112, 0.24);
+}
+.faq-page .wrapper .accordion-item .accordion-header {
+  padding: 15px 0;
+}
+.faq-page .wrapper .accordion-item .accordion-button {
+  background-color: transparent;
+  font-size: 1.3rem;
+}
+.faq-page .wrapper .accordion-item .accordion-button:focus {
+  outline: none !important;
+  border-color: transparent !important;
+  box-shadow: none;
+}
+.faq-page .wrapper .accordion-item .accordion-body .content {
+  background-color: #f7f7f7;
+  padding: 28px 18px;
+  border-radius: 13px;
+}
+.faq-page .wrapper .accordion-item .accordion-body .content p {
+  color: #fe0000;
+  font-size: 1rem;
+  margin: 0;
+}
+.faq-page .wrapper .accordion-item .accordion-button:not(.collapsed) {
+  color: #000;
+}
+
 /* ================================================================ */
+.terms-condition-page {
+  padding-top: 41px;
+  background-color: #f2f2f2;
+  padding: 65px 0;
+  padding-bottom: 200px;
+}
+.terms-condition-page .about-patform-head {
+  text-align: center;
+}
+.terms-condition-page .about-patform-head h5 {
+  color: #000;
+  font-size: 3rem;
+  margin-bottom: 44px;
+}
+.terms-condition-page .terms-condition-content {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 54px 60px;
+  margin-top: 100px;
+}
+.terms-condition-page .terms-condition-content ul li {
+  margin-bottom: 25px;
+  position: relative;
+  padding-right: 30px;
+}
+.terms-condition-page .terms-condition-content ul li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 0;
+  width: 11px;
+  height: 11px;
+  background-color: #fe0000;
+  border-radius: 50%;
+}
+.terms-condition-page .terms-condition-content ul li p {
+  color: #000;
+}
+
 /* ================================================================ */
+.myaccount-profile {
+  background-color: #f2f2f2;
+  padding-bottom: 200px;
+}
+
+.profile-sidebar {
+  margin-top: 90px;
+  background-color: #F7F7F7;
+  padding: 40px 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.profile-sidebar .profile-picture .card-img {
+  width: 140px;
+  height: 117px;
+  border-radius: 15px;
+  margin: auto;
+}
+.profile-sidebar .profile-picture .card-img img {
+  border-radius: 15px;
+}
+.profile-sidebar .close-sidebar {
+  display: none;
+}
+.profile-sidebar .side-list {
+  margin-top: 60px;
+}
+.profile-sidebar .side-list li a {
+  display: block;
+  padding: 20px 20px;
+  border-top-left-radius: 27px;
+  border-bottom-left-radius: 27px;
+  width: 90%;
+}
+.profile-sidebar .side-list li a i {
+  margin-left: 14px;
+  color: #323e48;
+  transition: all 0.3s ease-in-out;
+}
+.profile-sidebar .side-list li a span {
+  color: #323e48;
+  transition: all 0.3s ease-in-out;
+}
+.profile-sidebar .side-list li a:hover {
+  background-color: #000000;
+}
+.profile-sidebar .side-list li a:hover i,
+.profile-sidebar .side-list li a:hover span {
+  color: #fff;
+}
+.profile-sidebar .side-list li a.active {
+  background-color: #000000;
+}
+.profile-sidebar .side-list li a.active i,
+.profile-sidebar .side-list li a.active span {
+  color: #fff;
+}
+
+.profile-left-data {
+  padding: 0 62px;
+  padding-left: 0;
+}
+.profile-left-data .onecategory-card .card-img {
+  height: 240px;
+}
+.profile-left-data .onecategory-card .card-body {
+  padding-bottom: 0;
+}
+.profile-left-data .onecategory-card .like .wrap {
+  border-radius: 5px;
+  background-color: #fff;
+}
+.profile-left-data .onecategory-card .like .wrap i {
+  color: red;
+}
+.profile-left-data .onecategory-card .edit {
+  background-color: #00114e;
+  border-radius: 9px;
+  padding: 10px 15px;
+  margin-right: auto;
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 30px;
+}
+.profile-left-data .onecategory-card .edit a {
+  color: #fff;
+}
+.profile-left-data .onecategory-card .edit a i {
+  margin-left: 5px;
+}
+
+.profile-user-data .head {
+  text-align: center;
+  color: #000;
+  margin: 60px 0;
+}
+.profile-user-data .head h5 {
+  font-size: 3rem;
+}
+.profile-user-data .form-group {
+  margin-bottom: 26px;
+}
+.profile-user-data .form-group label {
+  margin-bottom: 12px;
+  color: #000;
+}
+.profile-user-data .form-group label i {
+  color: #fe0000;
+  margin-left: 13px;
+}
+.profile-user-data .form-group .form-control {
+  height: 60px;
+  background-color: #FFF;
+}
+.profile-user-data .form-group .form-control::-moz-placeholder {
+  color: #8d8d8d;
+  font-size: 0.9rem;
+}
+.profile-user-data .form-group .form-control::placeholder {
+  color: #8d8d8d;
+  font-size: 0.9rem;
+}
+.profile-user-data .btn-options {
+  margin-top: 126px;
+}
+.profile-user-data .btn-options a {
+  border-radius: 10px;
+  width: 506px;
+  max-width: 100%;
+  margin: auto;
+  display: block;
+  background-color: #000000;
+  border-color: #000000;
+}
+.profile-user-data .btn-options a:hover {
+  color: #000000;
+  background-color: transparent;
+}
+.profile-user-data .btn-change-pass a {
+  margin-top: 44px;
+  background-color: transparent;
+  color: #000000;
+  border-color: #000000;
+}
+.profile-user-data .btn-change-pass a:hover {
+  color: #fff;
+  background-color: #000000;
+}
+.profile-user-data .personal-img {
+  position: relative;
+  margin-bottom: 20px;
+}
+.profile-user-data .personal-img .per {
+  width: 165px;
+  height: 165px;
+  border-radius: 15px;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  background-color: #f0f0f0;
+}
+.profile-user-data .personal-img .upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  margin: 0;
+  cursor: pointer !important;
+  position: absolute;
+  transform: none !important;
+  left: unset;
+  top: unset;
+  right: 0;
+  bottom: -10px;
+}
+.profile-user-data .personal-img .btn {
+  color: #fe0000;
+  cursor: pointer !important;
+  text-align: right;
+  padding: 0;
+  font-size: 12px;
+  background-color: #fe0000;
+  z-index: 9;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33px;
+  height: 33px;
+}
+.profile-user-data .personal-img .btn i,
+.profile-user-data .personal-img .btn span {
+  color: #fff;
+}
+.profile-user-data .personal-img .btn i {
+  margin-top: -3px;
+  font-size: 1.2rem;
+}
+.profile-user-data .personal-img .btn:disabled {
+  display: none;
+}
+.profile-user-data .personal-img .upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.profile-user-data .personal-img h5 {
+  margin-top: 50px;
+}
+
 /* ================================================================ */
+.myaccountannousment .onecategory-card .like {
+  border-radius: 5px;
+}
+.myaccountannousment .onecategory-card .like .wrap {
+  background-color: #000000;
+}
+.myaccountannousment .onecategory-card .like i {
+  color: #000000;
+}
+
+/* ================================================================ */
+.profile-settings {
+  background-color: #fff;
+  padding: 30px;
+}
+.profile-settings h5 {
+  margin-bottom: 15px;
+}
+.profile-settings .form-group {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
 /* ================================================================ */
 /* ================================================================ */
 /* footer */
@@ -1419,7 +1845,6 @@ input[type=email] {
   text-align: right;
 }
 
-/* ================================================================ */
 /* ================================================================ */
 /* ================================================================ */
 /* ================================================================ */
