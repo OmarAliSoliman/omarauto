@@ -20,11 +20,69 @@
 
 <body>
 
+
+  <!-- overlay sidenav opened -->
+  <div class="bg-side-open"></div>
+
+  <!-- mobile navbar -->
+  <div class="side-nav">
+    <div class="container-xxl">
+      <div class="close-nav">
+        <div class="menu_icon" data-cursor="-icon">
+          <div id="nav-icon1" class="open">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <div class="side-wrapper">
+        <div class="person-info">
+          <div class="card-img">
+            <div class="img-parent">
+              <img src="./assets/images/person.png" alt="">
+            </div>
+          </div>
+          <a href=""><img src="./assets/images/commentblack.svg" alt=""></a>
+          <a href=""><img src="./assets/images/billblack.svg" alt=""></a>
+        </div>
+        <div class="side-links">
+          <ul class="list-unstyled mb-0">
+            <li class="nav-item "><a class="nav-link" href="./index.html">الرئيسية</a></li>
+            <li class="nav-item"><a class="nav-link" href="./service1.html">الاقسام</a></li>
+            <li class="login-item"><a href="" class="btn-style btn-style-rounded ">تسجيل الدخول</a></li>
+            <li class="signup-item"><a href="" class="btn-style btn-style-rounded new-account">انشاء حساب جديد</a></li>
+          </ul>
+        </div>
+        <!-- <div class="side-option">
+             <ul class="list-unstyled d-flex align-items-start">
+               <li><a href="" class="chat-icon"><img src="./assets/images/commentblack.svg" alt=""></a></li>
+               <li><a href="" class="notification-icon"><img src="./assets/images/billblack.svg" alt=""></a></li>
+               <li><a href="" class="person-icon">
+                   <div class="card-img">
+                     <div class="img-parent">
+                       <img src="./assets/images/person.png" alt="">
+                     </div>
+                   </div>
+                 </a>
+               </li>
+             </ul>
+           </div> -->
+      </div>
+    </div>
+  </div>
+
   <div class="custom-navbar custom-navbar-position">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-sm-12 col-md-6 col-lg-7">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-7">
           <div class="logo-links d-flex align-items-center">
+            <div class="menu_icon" data-cursor="-icon">
+              <div id="nav-icon1">
+                <!-- <span></span> -->
+                <span></span>
+                <span></span>
+              </div>
+            </div>
             <div class="logo">
               <a href="" class="d-block">
                 <img src="./assets/images/logo.svg" alt="">
@@ -40,7 +98,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-5">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-7">
           <div class="navbar-option mb-0  d-flex justify-content-end">
             <ul class="list-unstyled d-flex align-items-center">
               <li><a href="" class="chat-icon"><img src="./assets/images/chat.svg" alt=""></a></li>
@@ -75,10 +133,161 @@
       </div>
       <div class="announcment-details-page-content">
         <div class="row">
-          <div class="col-sm-12 col-md-6 col-lg-3"></div>
-          <div class="col-sm-12 col-md-6 col-lg-9">
+          <div class="col-sm-12 col-md-4 col-lg-3">
+            <div class="filter">
+              <div class="head">
+                <h5>فلتر بحثك </h5>
+              </div>
+              <div class="filter-form">
+                <form action="">
+                  <div class="form-group">
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            الاقسام
+                          </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                          data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <div class="form-input alldepartment">
+                              <h6>جميع الاقسام</h5>
+                                <input type="checkbox">
+                            </div>
+                            <div class="form-input">
+                              <input type="checkbox" id="departmenttype1" name="" id="">
+                              <label for="departmenttype1">طارات</label>
+                            </div>
+                            <div class="form-input">
+                              <input type="checkbox" id="departmenttype2" name="" id="">
+                              <label for="departmenttype2">محركات</label>
+                            </div>
+                            <div class="form-input">
+                              <input type="checkbox" id="departmenttype3" name="" id="">
+                              <label for="departmenttype3">كاوتش</label>
+                            </div>
+                            <div class="form-input">
+                              <input type="checkbox" id="departmenttype4" name="" id="">
+                              <label for="departmenttype4">بطاريات</label>
+                            </div>
+                            <div class="form-input">
+                              <input type="checkbox" id="departmenttype5" name="" id="">
+                              <label for="departmenttype5">أبواب</label>
+                            </div>
+                            <div class="form-input">
+                              <input type="checkbox" id="departmenttype6" name="" id="">
+                              <label for="departmenttype6">مقاعد</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="form-group">
+                    <div class="accordion" id="accordionExample2">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne2">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
+                            شركة السياره
+                          </button>
+                        </h2>
+                        <div id="collapseOne2" class="accordion-collapse collapse show" aria-labelledby="headingOne2"
+                          data-bs-parent="#accordionExample2">
+                          <div class="accordion-body">
+                            <div class="form-input alldepartment">
+                              <h6>الجميع</h5>
+                                <input type="checkbox">
+                            </div>
+                            <div class="form-input">
+                              <input type="checkbox" id="companytype1" name="" id="">
+                              <label for="companytype1">SEDAN</label>
+                            </div>
+                            <div class="form-input">
+                              <input type="checkbox" id="companytype2" name="" id="">
+                              <label for="companytype2">Honda</label>
+                            </div>
+                            <div class="form-input">
+                              <input type="checkbox" id="companytype3" name="" id="">
+                              <label for="companytype3">Mercedes</label>
+                            </div>
+                            <div class="form-input">
+                              <input type="checkbox" id="companytype4" name="" id="">
+                              <label for="companytype4">Mazda</label>
+                            </div>
+                            <div class="form-input">
+                              <input type="checkbox" id="companytype5" name="" id="">
+                              <label for="companytype5">BMW</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="form-group">
+                    <div class="accordion" id="accordionExample3">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne3">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne3" aria-expanded="true" aria-controls="collapseOne3">
+                            موديل السيارة
+                          </button>
+                        </h2>
+                        <div id="collapseOne3" class="accordion-collapse collapse show" aria-labelledby="headingOne3"
+                          data-bs-parent="#accordionExample3">
+                          <div class="accordion-body">
+                            <div class="form-input alldepartment">
+                              <h6>الجميع</h5>
+                                <input type="checkbox">
+                            </div>
+                            <div class="form-input">
+                              <input type="checkbox" id="modeltype1" name="" id="">
+                              <label for="modeltype1">2023</label>
+                            </div>
+                            <div class="form-input">
+                              <input type="checkbox" id="modeltype2" name="" id="">
+                              <label for="modeltype2">2022</label>
+                            </div>
+                            <div class="form-input">
+                              <input type="checkbox" id="modeltype3" name="" id="">
+                              <label for="modeltype3">2021</label>
+                            </div>
+                            <div class="form-input">
+                              <input type="checkbox" id="modeltype4" name="" id="">
+                              <label for="modeltype4">2019</label>
+                            </div>
+                            <div class="form-input">
+                              <input type="checkbox" id="modeltype5" name="" id="">
+                              <label for="modeltype5">2018</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-8 col-lg-9">
             <div class="announcment-details-content">
               <div class="dtails-info boxcolor">
+                <div class="option d-flex align-items-center">
+                  <a href=""><img src="./assets/images/share (1).svg" alt=""></a>
+                  <div class="like active-like">
+                    <div class="wrap d-flex align-items-center justify-content-center">
+                      <i class="far fa-heart disliked"></i>
+                      <i class="fas fa-heart liked"></i>
+                    </div>
+                  </div>
+                </div>
                 <div class="price">
                   <h5>30 000 ر.س</h5>
                 </div>
@@ -100,6 +309,60 @@
                   </a>
                 </div>
               </div>
+              <div class="announcment-description boxcolor">
+                <h5>تفاصيل الاعلان</h5>
+                <p>
+                  “لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
+                  أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد
+                  أكسير سيتاشن يللأمكو لابورأس نيسي يت أليكيوب أكس أيا كوممودو كونسيكيوات . ديواس
+                  أيوتي أريري دولار إن ريبريهينديرأيت فوليوبتاتي فيلايت أيسسي كايلليوم دولار أيو فيجايت
+                  نيولا باراياتيور. أيكسسيبتيور ساينت أوككايكات كيوبايداتات نون بروايدينت ,سيونت ان كيولبا
+                  كيو أوفيسيا ديسيريونتموليت انيم أيدي ايست لابوريوم.”
+                </p>
+                <p>
+                  “لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
+                  أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد
+                  أكسير سيتاشن يللأمكو لابورأس نيسي يت أليكيوب أكس أيا كوممودو كونسيكيوات . ديواس
+                  أيوتي أريري دولار إن ريبريهينديرأيت فوليوبتاتي فيلايت أيسسي كايلليوم دولار أيو فيجايت
+                  نيولا باراياتيور. أيكسسيبتيور ساينت أوككايكات كيوبايداتات نون بروايدينت ,سيونت ان كيولبا
+                  كيو أوفيسيا ديسيريونتموليت انيم أيدي ايست لابوريوم.”
+                </p>
+              </div>
+              <div class="annousment-holder boxcolor">
+                <h5>تفاصيل الاعلان</h5>
+                <div class="annousment-holder-wrapper d-flex align-items-center justify-content-between">
+                  <div class="img-name d-flex align-items-center">
+                    <div class="card-img">
+                      <div class="img-parent">
+                        <img src="./assets/images/person.png" alt="">
+                      </div>
+                    </div>
+                    <div class="name">
+                      <h5>أحمد إبراهيم علي</h5>
+                      <a href="">الصفحة الشخصية <i class="fas fas fa-chevron-left"></i></a>
+                    </div>
+                  </div>
+                  <div class="contact-details">
+                    <a href="">
+                      <i class="fas fa-comments"></i>
+                      <span>مراسلة داخلية</span>
+                    </a>
+                    <a href="" class="phone">
+                      <i class="fas fas fa-mobile-alt"></i>
+                      <span>رقم الجوال</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="addcomments">
+                <form action="">
+                  <textarea name="" id="" class="form-control" placeholder="أضف تعليق علي الاعلان…."></textarea>
+                  <button type="submit" class="btn-style">
+                    <img src="./assets/images/send2.svg" alt="">
+                    <span>ارسال</span>
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
@@ -109,6 +372,76 @@
 
 
 
+
+  <footer class="footer">
+    <div class="footer-img">
+      <img src="./assets/images/footer-img.webp" alt="">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-5">
+          <div class="footer_logo_content">
+            <div class="footer_logo">
+              <img src="./assets/images/logo.svg" alt="">
+            </div>
+            <div class="footer_conten">
+              <p>“لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
+                أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد
+                أكسير سيتاشن يللأمكو لابورأس نيسي يت أليكيوب أكس أيا كوممودو كونسيكيوات . ديواس
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-4 col-lg-2">
+          <div class="footer_links">
+            <h5>لينكات سريعة</h5>
+            <ul class="list-unstyled mb-0">
+              <li><a href="">الرئيسية</a></li>
+              <li><a href="">الأقسام الرئيسية</a></li>
+              <li><a href="">اتصل بنا</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col col-md-4 col-lg-2">
+          <div class="footer_links">
+            <h5>الدعم</h5>
+            <ul class="list-unstyled mb-0">
+              <li><a href="">الشروط و الاحكام</a></li>
+              <li><a href="">الاسئلة الشائعة</a></li>
+              <li><a href="">عن الموقع</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-3">
+          <div class="footer_follow">
+            <h5 class="text-center">تابعنا عبر وسائل التواصل الاجتماعي</h5>
+            <ul class="list-unstyled d-flex align-items-center text-center justify-content-center">
+              <li>
+                <a href="" target="_blank"><img src="./assets/images/linked_icon.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href="" target="_blank"><img src="./assets/images/google_icon.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href="" target="_blank"><img src="./assets/images/insta_icon.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href="" target="_blank"><img src="./assets/images/twitter-icon.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href="" target="_blank"><img src="./assets/images/facebook_icon.svg" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="download-app text-center">
+            <h5>استكشف التطبيق الخاص بنا</h5>
+            <a href=""><img src="./assets/images/googleplay.svg" alt=""></a>
+            <a href=""><img src="./assets/images/applestrpre.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
 

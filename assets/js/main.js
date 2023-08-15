@@ -35,7 +35,7 @@ $(document).ready(function () {
         {
           breakpoint: 991,
           settings: {
-            slidesToShow: 2,
+            slidesToShow: 3,
           },
         },
         {
@@ -95,7 +95,7 @@ $(document).ready(function () {
     });
   }
 
-  $(".mynavbar #nav-icon1").click(function () {
+  $(".custom-navbar #nav-icon1").click(function () {
     $(".side-nav").addClass("side-nav-open");
     $("html").addClass("side-active");
   });
