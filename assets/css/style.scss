@@ -1053,7 +1053,7 @@ p {
       }
     }
 
-    input[type="checkbox"]:checked ~ .card-check {
+    input[type="checkbox"]:checked~.card-check {
       background-color: #000;
       color: #fff;
 
@@ -1413,11 +1413,9 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(
-      to center,
-      rgba(#000000, 0.64),
-      rgba(#fff, 1)
-    );
+    background-image: linear-gradient(to center,
+        rgba(#000000, 0.64),
+        rgba(#fff, 1));
     border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;
   }
@@ -1452,26 +1450,32 @@ p {
     width: fit-content;
     margin: auto;
     margin-top: -100px;
+
     .card-img {
       width: 158px;
       height: 124px;
       border-radius: 11px;
+
       img {
         border-radius: 11px;
       }
     }
+
     h5 {
       color: $mainColor;
       text-align: center;
       font-size: 1.2rem;
       font-family: conb;
     }
+
     p {
       text-align: center;
+
       i {
         color: $mainColor;
         margin-left: 5px;
       }
+
       span,
       a {
         color: #000;
@@ -1484,9 +1488,11 @@ p {
 /* ================================================================ */
 .all-department {
   padding: 102px 0;
+
   .section-header {
     margin-bottom: 50px;
   }
+
   .department-card {
     margin-bottom: 50px;
   }
@@ -1496,15 +1502,17 @@ p {
 .notification-page {
   background-color: #f2f2f2;
   padding: 65px 0;
+
   .head {
     margin-bottom: 90px;
+
     h5 {
       font-size: 3rem;
       font-family: conb;
     }
   }
-  li {
-  }
+
+  li {}
 
   .wrapper {
     ul {
@@ -1518,6 +1526,7 @@ p {
           background-color: rgba(255, 255, 255, 0);
           box-shadow: 0 3px 6px rgba(#000000, 0.16);
           position: relative;
+
           p {
             padding-right: 75px;
             @extend %spcfies-number-of-line;
@@ -1534,6 +1543,7 @@ p {
           &.active {
             background-color: rgba(255, 255, 255, 1);
           }
+
           &::before {
             content: "\f0f3";
             @extend %inilizeFonrtAwsome_Before_After;
@@ -1562,8 +1572,10 @@ p {
   background-color: #f2f2f2;
   padding: 65px 0;
   padding-bottom: 200px;
+
   .head {
     margin-bottom: 90px;
+
     h5 {
       font-size: 3rem;
       font-family: conb;
@@ -1629,28 +1641,34 @@ p {
 /* ================================================================ */
 .profile-chats {
   padding: 90px 0;
+
   .wrapper {
     border: 0;
     background-color: transparent;
     padding-top: 0;
   }
+
   .head {
     margin-bottom: 30px;
+
     h5 {
       font-size: 3rem;
       font-family: conb;
     }
   }
+
   .chat-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 32px;
+
     .card-img {
       width: 112px;
       height: 92px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
       border-radius: 13px;
+
       img {
         border-radius: 13px;
       }
@@ -1662,13 +1680,16 @@ p {
     overflow: auto;
     padding: 0 20px;
   }
+
   .chat-message-form {
     .input-group {
       height: 84px;
+
       input {
         border: 1px solid $mainColor;
       }
     }
+
     .input-group-text {
       background-color: $mainColor;
       border: 1px solid $mainColor;
@@ -1682,46 +1703,53 @@ p {
 
 .chat-message {
   margin-bottom: 100px;
+
   .message {
     padding: 29px 23px 60px 23px;
     margin-bottom: 16px;
     width: 60%;
     border-radius: 13px;
+
     p {
       font-size: 1rem;
     }
   }
+
   .time {
     color: rgba(0, 0, 0, 0.36);
+
     i {
       margin-left: 10px;
       color: $mainColor;
     }
   }
+
   &.message-sent {
     .message {
       background-color: rgba(83, 83, 83, 0.238);
       border-bottom-left-radius: 0;
+
       p {
         color: #fff;
       }
     }
   }
+
   &.message-receive {
     .message {
       margin-right: auto;
-      background-image: linear-gradient(
-        to left,
-        #0d0d0d,
-        #0d0d0d,
-        #0d0d0d,
-        rgba(#717171, 0.9)
-      );
+      background-image: linear-gradient(to left,
+          #0d0d0d,
+          #0d0d0d,
+          #0d0d0d,
+          rgba(#717171, 0.9));
       border-bottom-left-radius: 0;
     }
+
     p {
       color: #fff;
     }
+
     .time {
       text-align: left;
     }
@@ -1734,27 +1762,33 @@ p {
   background-color: #f2f2f2;
   padding: 65px 0;
   padding-bottom: 200px;
+
   .faq-head {
     text-align: center;
     margin-bottom: 80px;
+
     h5 {
       margin-bottom: 50px;
       font-size: 3rem;
       color: #000;
     }
   }
+
   .wrapper {
     border: 0;
     border-radius: 24px;
     padding: 52px 57px;
     background-color: #fff;
     padding: 55px 60px;
+
     .accordion-item {
       background-color: transparent;
       border-bottom-color: rgba(112, 112, 112, 0.24);
+
       .accordion-header {
         padding: 15px 0;
       }
+
       .accordion-button {
         background-color: transparent;
         font-size: 1.3rem;
@@ -1765,11 +1799,13 @@ p {
           box-shadow: none;
         }
       }
+
       .accordion-body {
         .content {
           background-color: #f7f7f7;
           padding: 28px 18px;
           border-radius: 13px;
+
           p {
             color: $mainColor;
             font-size: 1rem;
@@ -1777,6 +1813,7 @@ p {
           }
         }
       }
+
       .accordion-button:not(.collapsed) {
         color: #000;
       }
@@ -1790,24 +1827,29 @@ p {
   background-color: #f2f2f2;
   padding: 65px 0;
   padding-bottom: 200px;
+
   .about-patform-head {
     text-align: center;
+
     h5 {
       color: #000;
       font-size: 3rem;
       margin-bottom: 44px;
     }
   }
+
   .terms-condition-content {
     background-color: #fff;
     border-radius: 10px;
     padding: 54px 60px;
     margin-top: 100px;
+
     ul {
       li {
         margin-bottom: 25px;
         position: relative;
         padding-right: 30px;
+
         &::before {
           content: "";
           position: absolute;
@@ -1819,6 +1861,7 @@ p {
           background-color: $mainColor;
           border-radius: 50%;
         }
+
         p {
           color: #000;
         }
@@ -1828,12 +1871,13 @@ p {
 }
 
 /* ================================================================ */
-.myaccount-profile{
+.myaccount-profile {
   // padding-top: 41px;
   background-color: #f2f2f2;
   // padding: 65px 0;
   padding-bottom: 200px;
 }
+
 .profile-sidebar {
   margin-top: 90px;
   background-color: #F7F7F7;
@@ -1841,22 +1885,27 @@ p {
   box-shadow: 0 3px 6px rgba(#000000, 0.1);
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
+
   .profile-picture {
     .card-img {
       width: 140px;
       height: 117px;
       border-radius: 15px;
       margin: auto;
+
       img {
         border-radius: 15px;
       }
     }
   }
+
   .close-sidebar {
     display: none;
   }
+
   .side-list {
     margin-top: 60px;
+
     li {
       a {
         display: block;
@@ -1864,24 +1913,30 @@ p {
         border-top-left-radius: 27px;
         border-bottom-left-radius: 27px;
         width: 90%;
+
         i {
           margin-left: 14px;
           color: #323e48;
           transition: all 0.3s ease-in-out;
         }
+
         span {
           color: #323e48;
           transition: all 0.3s ease-in-out;
         }
+
         &:hover {
           background-color: $secondColor;
+
           i,
           span {
             color: #fff;
           }
         }
+
         &.active {
           background-color: $secondColor;
+
           i,
           span {
             color: #fff;
@@ -1901,18 +1956,22 @@ p {
     .card-img {
       height: 240px;
     }
+
     .card-body {
       padding-bottom: 0;
     }
+
     .like {
       .wrap {
         border-radius: 5px;
         background-color: #fff;
+
         i {
           color: red;
         }
       }
     }
+
     .edit {
       background-color: #00114e;
       border-radius: 9px;
@@ -1921,8 +1980,10 @@ p {
       display: block;
       width: fit-content;
       margin-left: 30px;
+
       a {
         color: #fff;
+
         i {
           margin-left: 5px;
         }
@@ -1935,33 +1996,42 @@ p {
   .head {
     text-align: center;
     color: #000;
+
     h5 {
       font-size: 3rem;
     }
+
     margin: 60px 0;
   }
+
   .form-group {
     margin-bottom: 26px;
+
     label {
       margin-bottom: 12px;
       color: #000;
+
       i {
         color: $mainColor;
         margin-left: 13px;
       }
     }
+
     .form-control {
       height: 60px;
       background-color: #FFF;
+
       &::placeholder {
         color: #8d8d8d;
         font-size: 0.9rem;
       }
     }
   }
+
   .btn-options {
     margin-top: 126px;
-    a{
+
+    a {
       border-radius: 10px;
       width: 506px;
       max-width: 100%;
@@ -1969,19 +2039,22 @@ p {
       display: block;
       background-color: $secondColor;
       border-color: $secondColor;
-      &:hover{
+
+      &:hover {
         color: $secondColor;
         background-color: transparent;
       }
     }
   }
+
   .btn-change-pass {
     a {
       margin-top: 44px;
       background-color: transparent;
       color: $secondColor;
       border-color: $secondColor;
-      &:hover{
+
+      &:hover {
         color: #fff;
         background-color: $secondColor;
       }
@@ -1993,6 +2066,7 @@ p {
     // padding-right: 105px;
     position: relative;
     margin-bottom: 20px;
+
     // .personal-img-validation-delete {
     //   color: #f00;
     //   font-size: 13px;
@@ -2013,6 +2087,7 @@ p {
       background-color: #f0f0f0;
       // cursor: pointer;
     }
+
     .upload-btn-wrapper {
       position: relative;
       overflow: hidden;
@@ -2048,10 +2123,12 @@ p {
       justify-content: center;
       width: 33px;
       height: 33px;
+
       i,
       span {
         color: #fff;
       }
+
       i {
         // margin-left: 5px;
         margin-top: -3px;
@@ -2071,39 +2148,237 @@ p {
       opacity: 0;
       cursor: pointer;
     }
+
     h5 {
       margin-top: 50px;
     }
   }
 }
+
 /* ================================================================ */
-.myaccountannousment{
-  .onecategory-card{
-    .like{
+.myaccountannousment {
+  .onecategory-card {
+    .like {
       border-radius: 5px;
-      .wrap{
+
+      .wrap {
         background-color: $secondColor;
       }
-      i{
+
+      i {
         color: $secondColor;
       }
     }
   }
 }
+
 /* ================================================================ */
-.profile-settings{
+.profile-settings {
   background-color: #fff;
   padding: 30px;
-  h5{
+
+  h5 {
     margin-bottom: 15px;
   }
-  .form-group{
+
+  .form-group {
     margin-top: 0;
     margin-bottom: 0;
     margin-top: 10px;
   }
 }
+
 /* ================================================================ */
+.new-announsment-page {
+  background-color: #f2f2f2;
+  padding: 65px 0;
+  min-height: 100vh;
+
+  .new-announsment-wrapper {
+    background-color: #fff;
+    padding: 65px 20px;
+
+    .head {
+      margin-bottom: 120px;
+
+      h5 {
+        color: #000;
+        font-size: 3rem;
+        margin-top: 35px;
+      }
+    }
+    .form-group{
+      margin-bottom: 50px;
+      label{
+        margin-bottom: 15px;
+      }
+    }
+    .form-control, .nice-select{
+      height: 70px;
+      background-color: #F7F7F7;
+      border-radius: 7px;
+      border: .5px solid #000000;
+    }
+    .nice-select{
+      line-height: 65px;
+      text-align: right !important;
+    }
+    textarea.form-control{
+      height: 153px;
+    }
+  }
+  .moda_images {
+    // padding: 0 53px;
+    // padding-top: 30px;
+    // padding-bottom: 60px;
+
+    .images_file {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .card-img {
+      width: 143px;
+      height: 120px;
+      margin-left: 13px;
+      margin-bottom: 13px;
+      border-radius: 6px;
+
+      img {
+        border-radius: 6px;
+        transition: all 0.3s ease-in-out;
+      }
+
+      video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+      }
+
+      &:hover {
+        img {
+          transform: scale(1.5);
+        }
+      }
+    }
+
+    label {
+      cursor: pointer;
+    }
+
+    .custom_input_file {
+      width: 143px;
+      height: 120px;
+      background: #fafafa;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 10px;
+      margin-bottom: 13px;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+
+      img {
+        width: 35px;
+      }
+
+      input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  }
+  .choose-main-image{
+    margin-bottom: 33px;
+    .card-img{
+      width: 143px;
+      height: 120px;
+      border-radius: 15px;
+      img{
+        border-radius: 15px;
+      }
+    }
+  }
+  .btn-submit{
+    margin-top: 129px;
+    text-align: center;
+    .btn-style{
+      background-color: $secondColor;
+      border-radius: 10px;
+      text-align: center;
+      border-color: $secondColor;
+      width: 400px;
+      margin: auto;
+      max-width: 100%;
+    }
+  }
+}
+
+/* ================================================================ */
+
+.announcment-details-page{
+  background-color: #f2f2f2;
+  padding: 65px 0;
+  min-height: 100vh;
+  .announcemnt-image{
+    .card-img{
+      height: 400px;
+    }
+  }
+  .announcment-details-page-content{
+    padding-top: 35px;
+  }
+  .boxcolor{
+    background-color: #fff;
+    padding: 23px 39px;
+    padding-bottom: 35px;
+  }
+  .dtails-info{
+    position: relative;
+    .price{
+      h5{
+        font-size: 2.3rem;
+        margin-bottom: 20px;
+        color: $mainColor;
+        direction: ltr;
+        text-align: right;
+      }
+    }
+    .title{
+      font-size: 1.5rem;
+      color: $secondColor;
+      font-family: conb;
+    }
+    li{
+      margin-left: 30px;
+      p{
+        margin: 0;
+        font-family: conl;
+        color: #8E8E8E;
+      }
+      span{
+        margin-left: 10px;
+      }
+      i{
+        color: $mainColor;
+        margin-left: 5px;
+      }
+    }
+    .warning{
+      position: absolute;
+      left: 20px;
+      bottom: 35px;
+    }
+  }
+
+}
 
 /* ================================================================ */
 /* footer */
@@ -2183,6 +2458,7 @@ p {
   }
 
   .footer_follow {
+
     // margin-top: 65px;
     h5 {
       text-align: center;
