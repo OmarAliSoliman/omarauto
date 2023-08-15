@@ -1980,6 +1980,10 @@ p {
   }
 }
 
+.profile-left-data.profile-chats{
+  padding: 90px 0;
+}
+
 .profile-left-data {
   padding: 0 62px;
   padding-left: 0;
@@ -2699,8 +2703,54 @@ input[type="email"] {
     .annousment-holder-wrapper{
       flex-direction: column;
       justify-content: flex-start;
+      align-items: flex-start !important;
+    }
+    .contact-details{
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      a{
+        margin-right: 0 !important;
+        margin-left: 10px !important;
+        margin-top: 10px;
+      }
     }
   }
+  .announcment-details-page .dtails-info ul{
+    flex-direction: column;
+    align-items: flex-start !important;
+    li{
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media(max-width: 600px){
+  .chat-message .message{
+    width: 90%;
+  }
+  .faq-page .wrapper{
+    padding: 25px 20px;
+  }
+  .login-form{
+    padding: 30px;
+  }
+  .profile-left-data{
+    padding: 0 0;
+  }
+  .profile-left-data .onecategory-card .card-body{
+    padding-bottom: 30px;
+  }
+  .profile-left-data.profile-settings{
+    padding: 30px;
+  }
+  .profile-owner-page .profile-picture{
+    margin-top: 0;
+  }
+}
+
+.profile-left-data.notification-page-page{
+  padding: 0;
 }
 /* ================================================================ */
 
