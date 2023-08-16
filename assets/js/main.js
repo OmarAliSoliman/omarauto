@@ -123,30 +123,23 @@ $(document).ready(function () {
     new WOW().init();
   }
 
-  if ($(".open-profile-sidebar").length) {
-    $(".open-profile-sidebar").click(function () {
-      $(".profile-sidebar").addClass("profile-sidebar-active");
+  if($(".custom-navbar").length){
+    $(".custom-navbar .search").click(function () {
+      $(".search-screen").addClass("search-screen-active");
       $("html").addClass("side-active");
-    });
+    })
   }
 
-  if ($(".profile-sidebar").length) {
-    $(".profile-sidebar .close-sidebar").click(function () {
-      $(".profile-sidebar").removeClass("profile-sidebar-active");
+  if($(".search-screen").length){
+    $(".search-screen .close").click(function () {
+      $(".search-screen").removeClass("search-screen-active");
       $("html").removeClass("side-active");
-    });
+    })
   }
+
 });
 
-if ($("#phone").lenght) {
-  const phoneInputField = document.querySelector("#phone");
-  const phoneInput = window.intlTelInput(phoneInputField, {
-    preferredCountries: ["sa"],
-    separateDialCode: true,
-    utilsScript:
-      "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
-  });
-}
+
 
 var inputs = document.querySelectorAll(".file-input");
 
@@ -170,5 +163,7 @@ function customInput(el) {
 
 $(window).on("load", function () {
   $("html").removeClass("splash-active");
-  $(".splash").addClass("splashscreen-none");
+  $(".splashscreen").addClass("splashscreen_none");
 });
+
+
