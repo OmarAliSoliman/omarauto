@@ -2521,6 +2521,101 @@ p {
     }
   }
 }
+/* ================================================================ */
+
+.contact-content{
+  position: relative;
+  .contactimg{
+    position: absolute;
+    right: 0;
+    top: 141px;
+  }
+  .form-control{
+    height: 50px;
+    font-family: conl;
+    background-color: #fff;
+    border: .5pa solid $secondColor;
+    margin-top: 15px;
+  }
+  form{
+    background-color: #262626;
+    padding: 41px 104px;
+    border-top-left-radius: 22px;
+    border-bottom-left-radius: 22px;
+    position: relative;
+    z-index: 4;
+    margin-top: 141px;
+    margin-bottom: 141px;
+    h5{
+      text-align: center;
+      // margin-top: 80px;
+      color: #fff;
+      font-size: 2.5rem; 
+      font-family: conb;
+    }
+    textarea.form-control{
+      height: 137px;
+    }
+  }
+  .btn-submit{
+    .btn-style{
+      border-radius: 10px;
+      margin-top: 30px;
+    }
+  }
+}
+
+
+.about-site{
+  text-align: center;
+  padding: 50px 0;
+  .head{
+    margin-bottom: 50px;
+    h5{
+      font-size: 2.3rem;
+      font-family: conb;
+    }
+  }
+  .logo{
+    margin-bottom: 25px;
+  }
+  p{
+    font-size: 1.1rem;
+    font-family: conl;
+    width: 60%;
+    margin: auto;
+    line-height: 25px;
+  }
+  .social{
+    margin-top: 70px;
+    text-align: center;
+    ul{
+      justify-content: center;
+
+    }
+    li{
+      margin: 0 5px;
+      a{
+        img{
+          width: 45px;
+        }
+      }
+    }
+  }
+}
+
+.funun{
+  padding: 15px 0;
+  text-align: center;
+  background-image: linear-gradient(to top, rgba(#0039B5, 1), rgba(#02284A, 1));
+  img{
+    width: 170px;
+  }
+  h5{
+    color: #fff;
+  }
+  margin-top: 30px;
+}
 
 /* ================================================================ */
 /* footer */
@@ -2723,6 +2818,12 @@ input[type="email"] {
       margin-bottom: 10px;
     }
   }
+  .contact-content form{
+    padding: 40px;
+  }
+  .about-site p{
+    width: 100%;
+  }
 }
 
 @media(max-width: 600px){
@@ -2747,6 +2848,7 @@ input[type="email"] {
   .profile-owner-page .profile-picture{
     margin-top: 0;
   }
+
 }
 
 .profile-left-data.notification-page-page{

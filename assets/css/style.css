@@ -2060,6 +2060,94 @@ p {
 }
 
 /* ================================================================ */
+.contact-content {
+  position: relative;
+}
+.contact-content .contactimg {
+  position: absolute;
+  right: 0;
+  top: 141px;
+}
+.contact-content .form-control {
+  height: 50px;
+  font-family: conl;
+  background-color: #fff;
+  border: 0.5pa solid #000000;
+  margin-top: 15px;
+}
+.contact-content form {
+  background-color: #262626;
+  padding: 41px 104px;
+  border-top-left-radius: 22px;
+  border-bottom-left-radius: 22px;
+  position: relative;
+  z-index: 4;
+  margin-top: 141px;
+  margin-bottom: 141px;
+}
+.contact-content form h5 {
+  text-align: center;
+  color: #fff;
+  font-size: 2.5rem;
+  font-family: conb;
+}
+.contact-content form textarea.form-control {
+  height: 137px;
+}
+.contact-content .btn-submit .btn-style {
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.about-site {
+  text-align: center;
+  padding: 50px 0;
+}
+.about-site .head {
+  margin-bottom: 50px;
+}
+.about-site .head h5 {
+  font-size: 2.3rem;
+  font-family: conb;
+}
+.about-site .logo {
+  margin-bottom: 25px;
+}
+.about-site p {
+  font-size: 1.1rem;
+  font-family: conl;
+  width: 60%;
+  margin: auto;
+  line-height: 25px;
+}
+.about-site .social {
+  margin-top: 70px;
+  text-align: center;
+}
+.about-site .social ul {
+  justify-content: center;
+}
+.about-site .social li {
+  margin: 0 5px;
+}
+.about-site .social li a img {
+  width: 45px;
+}
+
+.funun {
+  padding: 15px 0;
+  text-align: center;
+  background-image: linear-gradient(to top, #0039b5, #02284a);
+  margin-top: 30px;
+}
+.funun img {
+  width: 170px;
+}
+.funun h5 {
+  color: #fff;
+}
+
+/* ================================================================ */
 /* footer */
 .footer {
   padding: 35px 0 29px 0;
@@ -2221,6 +2309,12 @@ input[type=email] {
   }
   .announcment-details-page .dtails-info ul li {
     margin-bottom: 10px;
+  }
+  .contact-content form {
+    padding: 40px;
+  }
+  .about-site p {
+    width: 100%;
   }
 }
 @media (max-width: 600px) {
